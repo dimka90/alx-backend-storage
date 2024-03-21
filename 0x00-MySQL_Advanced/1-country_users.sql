@@ -9,5 +9,5 @@ CREATE TABLE IF NOT EXISTS users (
     -- Define name as a string
     name  VARCHAR(255),
     -- Define country as an ENUM type , never NULL with a default value
-    country ENUM('US','CO','TN') NOT NULL DEFAULT 'US'
+    country ENUM('US','CO','TN') NOT NULL
 );
