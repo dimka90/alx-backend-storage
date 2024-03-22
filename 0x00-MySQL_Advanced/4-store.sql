@@ -7,7 +7,7 @@ BEGIN
     -- Update the quantity of the corresponding item in the items table
     UPDATE items
     -- Subtract the quantity of the new order from the current item quantity
-    SET quantity = quantity - NEW.quantity
+    SET quantity = quantity - NEW.number
     -- Match the item name of the new order with the item name in the items table
     WHERE name = NEW.item_name
 END;
