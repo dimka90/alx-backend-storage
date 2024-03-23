@@ -4,11 +4,11 @@
 -- distribute the logic to the database itself!
 
 DELIMITER $$ ;
-CREATE TRIGGER resets_valid_email AFTER UPDATE ON users
+CREATE TRIGGER resets_valid_email BEFORE UPDATE ON users
 FOR EACH ROW
 BEGIN
 	IF NEW.email != OLD.email THEN
-		SET NEW.valid_email = 1;
+		SET NEW.valid_email = 0;
 	END IF;
 END;
 DELIMITER ;
