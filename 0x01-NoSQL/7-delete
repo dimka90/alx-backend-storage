@@ -1,2 +1,2 @@
 // a script that delete all the documents in  collection with a particular match
-db.school.delete({name:"Holberton school"}, {multi:true})
+db.school.deleteOne({name:"Holberton school"}, {multi:true})
