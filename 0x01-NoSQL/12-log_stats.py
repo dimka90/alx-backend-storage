@@ -5,6 +5,7 @@ A script that read some data from a collection
 """
 import pymongo
 
+
 # connecting to the database
 db_connection = pymongo.MongoClient("mongodb://localhost/27017")
 
