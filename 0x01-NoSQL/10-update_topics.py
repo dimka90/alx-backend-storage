@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 """
+a script that updates the values of a collection
 """
 
 
