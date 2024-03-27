@@ -3,6 +3,8 @@
 """
 A script that read some data from a collection
 """
+
+
 import pymongo
 
 
