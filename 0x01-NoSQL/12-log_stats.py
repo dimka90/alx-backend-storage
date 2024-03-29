@@ -33,5 +33,5 @@ def log_nginx_stats():
     print(f"{count_status} status check")
 
 
-if 'name == __main__':
+if 'name' == __main__':
     log_nginx_stats()
